@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Tech Panda">
+
+	<parameter name="server" value="dev" />
+
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		<listener class-name="reportConfig.ExtentTestListener" />
+
+	</listeners>
+
+	<test name="Run on FIREFOX browser">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.techpanda.user.User_Login" />
+		</classes>
+	</test>
+
+	<test name="Run on CHROME browser">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.techpanda.user.User_Login" />
+		</classes>
+	</test>
+
+</suite> 
